@@ -1,4 +1,6 @@
 /*
+    *CONCEPT USED : FUNCTIONS*
+
     WAP to convert time to minutes.
 
     Example:
@@ -17,12 +19,14 @@ int convertTimeInMinutes(int hrs, int mins){
 }
 
 int main(){
-    int hrs, minutes, totalMins;
+    int hrs=0, minutes=0, totalMins;
 
     printf("Enter hours and minutes : ");
     scanf("%d %d", &hrs, &minutes);
 
     totalMins = convertTimeInMinutes(hrs, minutes);
+
+    printf("Total minutes : %d", totalMins);
 
     return 0;
 }
