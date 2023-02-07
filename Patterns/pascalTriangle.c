@@ -31,16 +31,14 @@ int main(){
     arr[0][0] = arr[1][0] = arr[1][1] = 1;
 
     for(int row=2; row<n; row++){
-        arr[row][0] = 1;
+        arr[row][0] = arr[row][row] = 1;
 
-        for(int col=1; col<=row; col++){
-            if(col == row)
-                arr[row][col] = 1;
-            else
-                arr[row][col] = arr[row-1][col-1] + arr[row-1][col];
+        for(int col=1; col<row; col++){
+            arr[row][col] = arr[row-1][col-1] + arr[row-1][col];
         }
     }
 
+    //for printing triangle from 2D Array
     for(int i=0; i<n; i++){
         for(int s=0; s<(n-i-1); s++)
             printf("  ");
