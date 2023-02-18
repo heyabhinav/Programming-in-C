@@ -1,5 +1,5 @@
 /*
-    WAP to delete the first element of an array.
+    WAP to delete an element of an array from a given position.
 
     INPUT:
         Enter number of elements : 10
