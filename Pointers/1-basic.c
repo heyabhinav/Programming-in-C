@@ -8,7 +8,7 @@
     --> A pointer can point to variable of same data type(in other word, pointer can store the address of
     variable of same data type).
 
-    -->To declare a pointer variable we use "*" symbol, derefrence operator.
+    -->To declare a pointer variable we use "*" symbol, dereference operator.
         Syntax:
             <datatype> *<pointer_variable_name>;
 
